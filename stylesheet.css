@@ -1,0 +1,413 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+body{
+    color:#333;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 72px;
+    padding-bottom: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+/* HEADER */
+
+/* Navigation bar */
+
+.nav-wrap{
+    background-color: #495841;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-inner{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+    color: #fff;
+    background-color: #495841;
+    min-height: 4.6875rem;
+    max-width: 70%;
+    margin: auto 15%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Navigation bar logo */
+
+.lynx-logo-white{
+    height: 80px;
+
+}
+
+/* Navigation bar buttons */
+
+.nav-bar-btns{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-btn{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.header-btn:hover{
+    background-color: #ffffff;
+    color:#495841;
+}
+
+
+
+/* Hero */
+
+.hero-wrap{
+    background-image: url(photos/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+}
+
+.heroinner{
+    max-width: 44%;
+    padding: 100px 7% 100px;
+    margin: auto 15%;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.hero-text{
+    background-color: #333333ce;
+    padding: 50px;
+}
+
+.lynx-txt{
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+/* About */
+
+.about-wrap{
+    background-color: #f4f0ed;
+    
+}
+
+.about-inner{
+    max-width: 70%;
+    padding: 100px 0 100px;
+    margin: auto 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 72px;
+    width: 100%;
+}
+
+.about-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 64px 0;
+}
+
+.column{
+    max-width: 30%;
+}
+
+.column h3{
+    font-size: 64px;
+    text-align: center;
+}
+
+.column h4{
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.about-inner p{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+/* Adopt */
+
+.adopt-wrap{
+    background-image: url(photos/lynx-adopt.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.adopt-text{
+    background-color: #333333ce;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.adopt-inner{
+    color: #fff;
+    max-width: 60%;
+    padding: 100px 15% 100px;
+}
+
+.adopt-inner h2{
+    font-size: 48px;
+}
+
+.adopt-inner h3{
+    font-size: 24px;
+    padding: 50px 0 10px;
+}
+
+.adopt-inner p{
+    font-size: 18px;
+}
+
+.adopt-inner a{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #76462E;
+    text-transform: uppercase;
+    margin: 18px 0;
+    padding: 16px 48px;
+    transition: 0.5s;
+}
+
+.adopt-inner a:hover{
+    color:#76462E;
+    background: #ffffff;
+}
+
+
+/* Donate */
+
+.donate-wrap{
+    background-image: url(photos/lynx-donate.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+/* CLEAR FIX FOR FLOATING ELEMENTS OVER BACKGROUND */
+
+.donate-wrap:before,
+.donate-wrap:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.donate-wrap:after {
+    clear: both;
+}
+
+/* CLEAR FIX FOR FLOATING ELEMENTS OVER BACKGROUND */
+
+.donate-text{
+    background-color: #333333ce;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.donate-inner{
+    color: #fff;
+    max-width: 60%;
+    padding: 100px 15% 100px;
+    display: inline-block;
+    float: right;
+}
+
+.donate-inner h2{
+    font-size: 48px;
+}
+
+.donate-inner p{
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.donate-inner a{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #76462E;
+    text-transform: uppercase;
+    margin: 18px 0;
+    padding: 16px 48px;
+    transition: 0.5s;
+}
+
+.donate-inner a:hover{
+    color:#76462E;
+    background: #ffffff;
+}
+
+
+/* News wrap */
+
+.news-wrap{
+    background-color: #f4f0ed;
+}
+
+.news-inner{
+    max-width: 70%;
+    padding: 100px 0 100px;
+    margin: auto 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.news-title{
+    text-align: center;
+    font-size: 48px;
+    color:#333;
+    width: 100%;
+
+}
+
+.news-buttons{
+    padding: 50px;
+}
+
+.news-btn{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 50px;
+    margin: 50px;
+    color:#495841;
+    background-color: #f4f0ed;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+}
+
+.news-btn:hover{
+    color: #f4f0ed;
+    background-color: #495841;
+}
+
+/* Contact wrap */
+
+.contact-wrap{
+    background-color: #495841;
+    color:#f4f0ed;
+    
+}
+
+.contact-inner{
+    max-width: 70%;
+    padding: 100px 0 100px;
+    margin: auto 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.contact-inner h2{
+    font-size: 30px;
+}
+
+
+.contact-icon{
+    height: 65px;
+    width: 65px;
+    background-size: 128px;
+    background-position: 0 0;
+}
+
+.contact-icon:hover{
+    background-position: -63px -63px;
+}
+
+.facebook{
+    background-image: url(icons/icon-facebook.png);
+}
+
+
+.tweeter{
+    background-image: url(icons/icon-tweeter.png);
+}
+
+.instagram{
+    background-image: url(icons/icon-instagram.png);
+}
+
+.linkedin{
+    background-image: url(icons/icon-linkedin.png);
+}
+
+.youtube{
+    background-image: url(icons/icon-youtube.png);
+}
+
+
+@media screen and (max-width: 40em){
+    .nav-inner{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-bar-btns{
+        gap: 10px;
+        padding: 0;
+    }
+
+    
+
+    .nav-bar-btns li a{
+        font-size: 0.7em;
+    }
+}
